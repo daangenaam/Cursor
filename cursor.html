@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      cursor: url('https://static.wixstatic.com/media/7d02a2_d85de2dd8ca74fc29ba7b7d1a4c5cc7f~mv2.png'), auto;
+    }
+    .alt-cursor {
+      cursor: url('https://static.wixstatic.com/media/7d02a2_5d09b494a9724999bd069866bfb85236~mv2.png'), auto !important;
+    }
+  </style>
+</head>
+<body onclick="toggleCursor()">
+  <script>
+    let useAltCursor = false;
+    function toggleCursor() {
+      useAltCursor = !useAltCursor;
+      document.body.className = useAltCursor ? 'alt-cursor' : '';
+    }
+  </script>
+</body>
+</html>
